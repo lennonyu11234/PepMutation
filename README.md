@@ -96,7 +96,7 @@ orig, mutant = mutator.mutate_single_step(peptide)
 print(f"{orig} → {mutant}")
 
 # Multi-step trajectory
-for i, seq in enumerate(mutator.mutate(peptide, num_steps=3)):
+for i, seq in enumerate(mutator.mutate(peptide, num_steps=5)):
     print(f"Step {i}: {seq}")
 ```
 
