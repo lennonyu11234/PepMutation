@@ -8,7 +8,7 @@
 ## Overview
 
 <p align="center">
-  <img src="Figure.png" width="900">
+  <img src="Data/Figure1.png" width="900">
 </p>
 
 <p align="center">
@@ -50,30 +50,5 @@ Antimicrobial peptides (AMPs) are promising alternatives to antibiotics, but the
 - PyTorch ≥ 1.10
 - Transformers (HuggingFace)
 - pandas, numpy, scikit‑learn, scipy, rdkit (for fingerprint visualisations, optional)
-
-├── args.py
-├── Dataset.py
-├── Scoring/
-│   ├── Reg_trainer.py
-│   └── Cls_trainer.py
-├── Module/
-│   ├── Mutation_Module.py
-│   └── Score_module.py
-├── Mutation_trainer.py
-├── Mutator.py
-
-# Peptide Mutation & Scoring Model Training Guide
-
-## 1. Train Scoring Models
-Prepare a CSV with columns `SEQUENCE` and target (e.g. `MIC`).
-
-### Regression (e.g. MIC prediction)
-python Reg_trainer.py \
-    --data_path Data/Dataset/E_coli.csv \
-    --model_type gru \
-    --epochs 100 \
-    --batch_size 128 \
-    --lr 1e-3 \
-    --output_dir experiments/Ecoli
 
 
