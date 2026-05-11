@@ -34,7 +34,7 @@ Antimicrobial peptides (AMPs) are promising alternatives to antibiotics, but the
 - **Scoring/** – Fully equipped training loops for regression and classification tasks, with logging, checkpointing, and evaluation.
 - **Mutation_Module** – Defines the policy network that proposes which amino acid to change and where, and the `Scoring` module that loads your trained predictors as reward functions.
 - **Mutation_trainer** – Uses policy gradient (REINFORCE) to train the mutation policy to maximise one or multiple reward signals.
-- **Mutation** – Loads a trained policy and applies it to a single peptide sequence to produce mutants.
+- **Mutator** – Loads a trained policy and applies it to a single peptide sequence to produce mutants.
 
 ---
 
